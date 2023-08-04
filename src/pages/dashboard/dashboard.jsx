@@ -41,10 +41,12 @@ const Dashboard = () => {
     loanRequest(formData);
   };
 
+  // HANDLE MODAL
   const handleClick = () => {
     setOpen(true);
   };
 
+  // HANDLE SEARCH
   const handleSearch = (e) => {
     const query = e.target.value.toLowerCase();
     const filtered = data?.data?.filter((item) => {
@@ -67,7 +69,7 @@ const Dashboard = () => {
             <Button
               width="200px"
               size="15px"
-              text="Request Loan"
+              text="REQUEST LOAN"
               handleClick={handleClick}
             />
 
