@@ -24,7 +24,7 @@ const RepaymentSchedule = ({ data }) => {
         </div>
         <div className={styles.block}>
           <span>DATE :</span>
-          <p>{dateFormat(!data?.DATE && "0")}</p>
+          <p>{dateFormat(data?.DATE)}</p>
         </div>
       </div>
     </div>

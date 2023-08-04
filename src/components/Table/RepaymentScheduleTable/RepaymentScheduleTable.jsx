@@ -21,7 +21,6 @@ const RepaymentScheduleTable = ({ data }) => {
 
   const changePage = (value) => {
     setPageNumber(value);
-    console.log(value)
   };
 
 
