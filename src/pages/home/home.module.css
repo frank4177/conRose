@@ -1,6 +1,6 @@
 .wrap{
     height: 100vh;
-    background-image: url(/public/homeBkg.jpg);
+    background-image: url(/src/assets/homeBkg.jpg);
     background-size: cover;
     background-position: center;
     background-color: aliceblue;
