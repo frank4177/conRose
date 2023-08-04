@@ -1,0 +1,16 @@
+.logo{
+    font-weight: 700;
+    font-size: 29px;
+}
+
+.logo span{
+    color: #013f86c4;
+}
+
+
+/****** MEDIA QUERIES******/
+@media (max-width: 450px) {
+  .logo{
+    font-size: 22px;
+  }
+  }

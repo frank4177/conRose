@@ -1,0 +1,81 @@
+.container {
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+.container table {
+  width: 100%;
+  color: #444;
+  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.65);
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.container .thead,
+.tbody,
+.tr {
+  height: 50px;
+  background-color: white;
+  padding: 0px 10px;
+}
+
+
+.container tbody tr {
+  border-bottom: 1px solid lightgray;
+}
+
+.container td {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.container th {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+
+.action {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.editIcon {
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--green-color);
+}
+
+.view {
+  padding: 5px;
+  /* background-color: #013f868d; */
+  border: 2px solid #013f868d;
+  cursor: pointer;
+  font-size: 14px;
+  color: #013f868d;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1140px) {
+  .container table {
+    width: 900px;
+  }
+}

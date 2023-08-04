@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./App.module.css";
+import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  // useLocation,
+} from "react-router-dom";
+
+// Components
+import Home from "./pages/home/home";
+import Navbar from "./components/Navbar/Navbar";
+import Dashboard from "./pages/dashboard/dashboard";
+import RepaymentSchedule from "./pages/repaymentSchedulePage/repaymentSchedulePage";
 
 function App() {
+// const {pathname} = useLocation()
+
+// console.log(pathname)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/dashboard" element={<Dashboard />} />
+        <Route exact path="/repayment-schedule" element={<RepaymentSchedule />} />
+      </Routes>
+    </Router>
+    <ToastContainer />
+    </>
   );
 }
 

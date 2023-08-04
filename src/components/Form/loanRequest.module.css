@@ -1,0 +1,29 @@
+.form{
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 15px;
+    gap: 25px;
+}
+
+
+.input{
+    display: grid;
+    max-width: 400px;
+    width: 100%;
+    gap: 3px;
+}
+
+.input label{
+    font-size: 13px;
+}
+
+.input input{
+    height: 25px;
+}

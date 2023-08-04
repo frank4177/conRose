@@ -1,0 +1,44 @@
+.nav{
+    height: 86px;
+    padding: 0px 8%;
+     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.logout{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-size: 17px;
+}
+
+.icon{
+    font-size: 25px;
+}
+
+
+/****** MEDIA QUERIES******/
+@media (max-width: 450px) {
+    .logout{
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .icon{
+        font-size: 20px;
+    }
+  }
+
+  @media (max-width: 290px) {
+    .logout p{
+        display: none;
+    }
+
+    .icon{
+        font-size: 22px;
+    }
+  }

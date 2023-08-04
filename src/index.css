@@ -1,10 +1,83 @@
+:root {
+  --yellow-color: #FFC400;
+  --orange-color: #f19c08;
+  --white-color: white;
+  --green-color: #1A8754;
+  --white-grey:#F9F9F9;
+  --gray-color: #E1E1E1;
+  --red-color: red;
+  --font: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  min-height: 100vh;
+  /* overflow-x: hidden; */
+  /* max-width: 1570px; */
+}
+
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+}
+
+.copyBox{
+  cursor: pointer;
+  width: fit-content;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 14px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+
+
+ .action{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.editIcon{
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--green-color);
+}
+
+.deleteIcon{
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--red-color);
 }
 
 code {
