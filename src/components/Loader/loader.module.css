@@ -28,7 +28,7 @@
   .loader::after {
     left: auto;
     right: 0;
-    background: var(--yellow-color);
+    background: var(--orange-color);
     transform: translateX(10px);
   }
   
