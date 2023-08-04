@@ -10,15 +10,22 @@ import "rc-pagination/assets/index.css";
 import { formatCurrency } from "../../../utils";
 
 const RepaymentScheduleTable = ({ data }) => {
-  const [pageNumber, setPageNumber] = useState(0);
-
+  const [pageNumber, setPageNumber] = useState(1);
   const usersPerPage = 10;
-  const pagesVisited = pageNumber * usersPerPage;
-  const pageCount = Math.ceil(data?.data?.length / usersPerPage);
+
+  const totalItems = data?.data?.length;
+  const startIndex = (pageNumber - 1) * usersPerPage;
+  const endIndex = startIndex + usersPerPage;
+  const currentItems = data?.data?.slice(startIndex, endIndex);
+
 
   const changePage = (value) => {
     setPageNumber(value);
+    console.log(value)
   };
+
+
+  
 
   return (
     <>
@@ -39,9 +46,7 @@ const RepaymentScheduleTable = ({ data }) => {
               </thead>
 
               <tbody className={styles.tbody}>
-                {data?.data
-                  ?.slice(pagesVisited, pagesVisited + usersPerPage)
-                  .map((item) => (
+                {currentItems?.map((item) => (
                     <tr className={styles.tr} key={item.ID}>
                       <td className={styles.td}>
                         {formatCurrency(item.EXPECTED_REPAYMENT_AMOUNT)}
@@ -63,7 +68,7 @@ const RepaymentScheduleTable = ({ data }) => {
             <Pagination
               onChange={changePage}
               current={pageNumber}
-              total={data?.data?.length}
+              total={totalItems}
               showSizeChanger={false}
               totalBoundaryShowSizeChanger={false}
               pageSizeOptions={["4"]}
