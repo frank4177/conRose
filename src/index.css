@@ -15,7 +15,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* overflow-x: hidden; */
   /* max-width: 1570px; */
 }

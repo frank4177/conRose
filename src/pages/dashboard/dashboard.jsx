@@ -12,10 +12,10 @@ import Loader from "../../components/Loader/Loader";
 import Navbar from "../../components/Navbar/Navbar";
 
 const Dashboard = () => {
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState(false);
   const [searchResult, setSearchResult] = useState([]);
   const { loanRequest, reload } = useRequestLoan();
-  const { data, isLoading } = useFetchAllLoans(reload);
+  const { data, isLoading } = useFetchAllLoans(reload, setOpen);
   const [payloadData, setPayloadData] = useState({
     action: "request_for_loan",
     full_name: "",

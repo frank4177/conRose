@@ -11,8 +11,8 @@ const Modal = ({ open, setOpen, children }) => {
       <div className={open ? styles.overlay : styles.ov}>
           <Slide direction="down" style={{width:"100%"}} duration={300}>
             <div className={styles.content}>
-            <div onClick={() => setOpen(false)} className={styles.closeIcon}>
-              <RiCloseCircleFill size={50} color="white" />
+            <div onClick={() => setOpen(false)} >
+              <RiCloseCircleFill className={styles.closeIcon} color="white" />
             </div>
 
             {children}

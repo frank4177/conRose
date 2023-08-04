@@ -18,9 +18,6 @@ import Dashboard from "./pages/dashboard/dashboard";
 import RepaymentSchedule from "./pages/repaymentSchedulePage/repaymentSchedulePage";
 
 function App() {
-// const {pathname} = useLocation()
-
-// console.log(pathname)
 
   return (
     <>

@@ -21,10 +21,8 @@ export const useRequestLoan = () => {
         });
       }
       setReload(reload + 1)
-      console.log(data);
       return data;
     } catch (error) {
-      console.log(error);
     }
   };
 
@@ -33,12 +31,12 @@ export const useRequestLoan = () => {
 
 
 // GET ALL LOAN REQUESTS
-export const useFetchAllLoans = (reload) => {
+export const useFetchAllLoans = (reload, setOpen) => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    const fetchLoanRequests = async (payload) => {
+    const fetchLoanRequests = async () => {
       setIsLoading(true)
       try {
         const { data } = await axios.post(
@@ -53,14 +51,12 @@ export const useFetchAllLoans = (reload) => {
             },
           }
         );
-
+        setOpen(false)
         setIsLoading(false)
         setData(data);
-        console.log(data);
         return data;
       } catch (error) {
         setIsLoading(false)
-        console.log(error);
       }
     };
 
@@ -94,11 +90,9 @@ export const useFetchRepaymentSchedule = (traxID) => {
         );
         setIsLoading(false)
         setData(data);
-        console.log(data);
         return data;
       } catch (error) {
         setIsLoading(false)
-        console.log(error);
       }
     };
 
