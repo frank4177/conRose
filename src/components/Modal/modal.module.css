@@ -4,7 +4,7 @@
     display: flex;
     justify-content:center;
     /* align-items: center; */
-    padding-top: 20px;
+    padding-top: 30px;
     background: rgba(51, 51, 51, 0.5);
     z-index: 1290;
     top: 0;
@@ -45,6 +45,6 @@
     }
 
     .closeIcon{
-        font-size: 30px;
+        font-size: 40px;
     }
   }
