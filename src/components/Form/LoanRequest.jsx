@@ -37,7 +37,7 @@ const LoanRequestForm = ({ handleChange, payloadData, handleSubmit }) => {
         />
       </span>
 
-      <Button width="200px" />
+      <Button width="200px" text="Submit"/>
     </form>
   );
 };
