@@ -68,13 +68,9 @@ const RepaymentScheduleTable = ({ data }) => {
               onChange={changePage}
               current={pageNumber}
               total={totalItems}
-              showSizeChanger={false}
-              totalBoundaryShowSizeChanger={false}
-              pageSizeOptions={["4"]}
               simple={true}
               prevIcon={<BsArrowLeftSquare size="19" />}
               nextIcon={<BsArrowRightSquare size="19" />}
-              // style={{display:"flex", alignItems:"center", backgroundColor:"red", height:"50px"}}
             />
           </div>
         </>

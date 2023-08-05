@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./repaymentSchedulePage.module.css";
 import RepaymentSchedule from "../../components/RepaymentSchedule/RepaymentSchedule";
-import Table from "../../components/Table/Table";
 import RepaymentScheduleTable from "../../components/Table/RepaymentScheduleTable/RepaymentScheduleTable";
 import { useFetchRepaymentSchedule } from "../../services/APIs/loanRequest";
 import { useLocation } from "react-router-dom";

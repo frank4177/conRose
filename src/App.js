@@ -7,13 +7,10 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
-  // useLocation,
 } from "react-router-dom";
 
 // Components
 import Home from "./pages/home/home";
-import Navbar from "./components/Navbar/Navbar";
 import Dashboard from "./pages/dashboard/dashboard";
 import RepaymentSchedule from "./pages/repaymentSchedulePage/repaymentSchedulePage";
 

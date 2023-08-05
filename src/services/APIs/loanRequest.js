@@ -97,7 +97,7 @@ export const useFetchRepaymentSchedule = (traxID) => {
     };
 
     fetchRepaymentSchedule();
-  }, []);
+  }, [traxID]);
 
   return { data, isLoading };
 };

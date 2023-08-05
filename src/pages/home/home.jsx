@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./home.module.css";
-import Button from "../../components/Button/Button";
 import {BiLogIn} from "react-icons/bi"
 import { Link } from "react-router-dom";
 import Logo from "../../components/Logo/Logo";

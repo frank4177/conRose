@@ -15,7 +15,6 @@ const Table = ({ data, dataLength }) => {
   const [pageNumber, setPageNumber] = useState(1);
   const usersPerPage = 10;
 
-  const totalItems = data?.length;
   const startIndex = (pageNumber - 1) * usersPerPage;
   const endIndex = startIndex + usersPerPage;
   const currentItems = data?.toReversed()?.slice(startIndex, endIndex);
@@ -77,11 +76,8 @@ const Table = ({ data, dataLength }) => {
           <div className={styles.pagination}>
             <Pagination
               onChange={changePage}
-              current={pageNumber <= 0 ? 1 : pageNumber}
+              current={pageNumber}
               total={dataLength}
-              showSizeChanger={false}
-              totalBoundaryShowSizeChanger={false}
-              pageSizeOptions={["4"]}
               simple={true}
               prevIcon={<BsArrowLeftSquare size="19" />}
               nextIcon={<BsArrowRightSquare size="19" />}
