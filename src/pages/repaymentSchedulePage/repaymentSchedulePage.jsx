@@ -27,7 +27,7 @@ const RepaymentSchedulePage = () => {
             <RepaymentSchedule data={data} />
 
             <div className={styles.tableWrap}>
-              <h3>Repayment Schedule</h3>
+              <h4>REPAYMENT SCHEDULE</h4>
               <RepaymentScheduleTable data={data} />
             </div>
           </>

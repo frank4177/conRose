@@ -85,6 +85,7 @@ const Dashboard = () => {
             </form>
           </div>
 
+          <h4 className={styles.title}>ALL LOAN REQUESTS</h4>
           <Table
             data={searchResult.length > 0 ? searchResult : data?.data}
             dataLength={
